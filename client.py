@@ -4,7 +4,7 @@ import socket
 nickname = input("Scegli un nome: ")
 
 client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-client.connect(('192.168.1.12', 55555))
+client.connect(('' # YOUR HOST, #YOUR PORT))
 
 def receive():
     while True:
